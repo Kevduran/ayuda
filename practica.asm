@@ -7,6 +7,23 @@ SECTION .text
 ;Direccionamiento inmediato
 MOV AH, 04h
 
+
+;ejemplo para la pantalla
+;MOV AH, 09H    Activamos la función 09
+;MOV AL, 41H    Queremos repetir la letra A
+;MOV BH, 00H    En la primera página de pantalla (página 0)
+;MOV BL, 72H    En fondo blanco y frente verde
+;MOV CX, 03H    Queremos repetir el carácter tres (3) veces.
+;INT 10H        Activar la interrupción 10 (modo texto de video)
+
+
+;MOV AH, 0EH    Activamos la función 0E
+;MOV AL, 41H    Queremos repetir la letra A
+;MOV BH, 00H    En la primera página de pantalla (página 0)
+;MOV BL, 05H    En color magenta
+;INT 10H        Activar la interrupción 10 (modo texto de video)
+
+
 ;Direccionamiento por registro
 MOV CH, 10h
 MOV BL, CH
